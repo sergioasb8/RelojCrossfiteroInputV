@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:white;
+    font-family: sans-serif;
+}
+
+/*=========================================================*/
+/*Estilos del For Time*/
+
+.container-Fortime .row .col h1{
+    text-align: center;
+    margin: 20px 10px;
+    padding: 20px;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: #FFD24A;
+    border-radius: 10px;
+}
+
+.container-Fortime .row .col .btn-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+
+#ForTimeClock{
+    text-align: center;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.container-Fortime .row .col .btn-group button{
+    border: none;
+    color: white;
+    background-color: #FFD24A ;
+    font-size: 20px;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 10px;
+
+    
+    
+}
+
+.container-Fortime .row .col .btn-group button:hover{
+    border:none;
+    color: #FFCA2C;
+    background-color: black ;
+}
+
+/*=========================================================*/
+/*Estilos del Amrap*/
+
+.container-Amrap .row .col h1{
+    text-align: center;
+    margin: 20px 10px;
+    padding: 20px;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: #FFD24A;
+    border-radius: 10px;
+}
+
+.container-Amrap .row .col .btn-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+
+#TemporizadorAmrap{
+    text-align: center;
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+.container-Amrap .col .btn-group button{
+    border: none;
+    color: white;
+    background-color: #FFD24A ;
+    font-size: 20px;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    
+    
+}
+
+.container-Amrap .row .col .btn-group button:hover{
+    border:none;
+    color: #FFCA2C;
+    background-color: black ;
+}
+
+input {
+    width: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 2px;
+    font-size: 18px;
+}
+
+
+
+/*=========================================================*/
+/*Responsive del for Time*/
+
+@media screen and (max-width:400px){
+    .container-Fortime .row .col .btn-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: 15px;
+        padding: 10px;
+    }
+    #ForTimeClock{
+        text-align: center;
+        font-size: 20px;
+        margin: 0 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width:300px){
+    .container-Fortime .row .col .btn-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+}
+
+/*=========================================================*/
+/*Resposive del Amrap*/
+
+@media screen and (max-width:360px){
+    .container-Amrap .row .col .btn-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: 15px;
+        padding: 10px;
+    }
+
+    #TemporizadorAmrap{
+        text-align: center;
+        font-size: 20px;
+        margin: 0 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+@media screen and (max-width:360px){
+    .container-Amrap .row .col .btn-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head begin-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reloj Crossfitero</title>
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"-->
+        <!--quitar el link de arriba quita los estilos de botones de bootstrap-->
+    <link rel="stylesheet" href="CSS/Stylenavbar.css">
+    <link rel="stylesheet" href="CSS/Styleslider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<!-- head end-->
+
+<!-- body begin-->
+<body>
+    
+    <!--barra de navegación-->
+    <header>
+    <div id="logo">
+        <img src="imagenes/relojcrosfitero (1).png" alt="" width="240px">
+    </div>
+        <nav id="menu">
+            <ul>
+                <li> <button type="button" class="btn btn-primary justify-content-center mr-5 ml-5" id="Cronometer">Cronometer</button></li>
+                <li><button type="button" class="btn btn-primary justify-content-center mr-5" id="Tabata">Tabata</button></li>
+                <li><button type="button" class="btn btn-primary justify-content-center mr-5" id="ForTime">ForTime</button></li>
+                <li><button type="button" class="btn btn-primary justify-content-center mr-5" id="Emom">Emom</button></li>
+                <li><button type="button" class="btn btn-primary justify-content-center mr-5" id="Amrap">Amrap</button></li>
+            </ul>
+
+        </nav>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <!--barra de navegación-->
+
+    <!--hacer lo como un slider-->
+   <div class="banner">
+    <div class="banner-item" id="CronometerTitle">
+        <h2 class="banner-title">Cronometro</h2>
+        <p class="banner-info">Cronometro tradicional.</p>
+    </div>
+    <div class="banner-item" id="TabataTitle">
+        <h2 class="banner-title">Tabata</h2>
+        <p class="banner-info">El método Tabata es un entrenamiento interválico de alta intensidad. Usualmente son 8 rondas que constan de 20 segundos de trabajo y 10 segundos de descanso.</p>
+    </div>
+    <div class="banner-item" id="ForTimeTitle">
+        <h2 class="banner-title">For Time</h2>
+        <p class="banner-info">El método For Time busca realizar cierto número de rondas de un conjunto de ejercicios lo más rápido posible.</p>
+    </div>
+    <div class="banner-item" id="EmomTitle">
+        <h2 class="banner-title">Emom</h2>
+        <p class="banner-info">El método Emom es una forma de entrenamiento donde se deben realizar un set de ejercicios cada minuto mientras el reloj avanza.</p>
+    </div>
+    <div class="banner-item" id="AmrapTitle">
+        <h2 class="banner-title">Amrap</h2>
+        <p class="banner-info">El método Amrap se basa en alcanzar la mayor cantidad de repeticones posibles en un período de tiempo determinado.</p>
+    </div>
+   </div>
+
+
+   
+
+    <!-- Links to call bootstrap jquery and cluodflare-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="JavaS/index.js"></script>
+    <script src='JavaS/navbar.js'></script>
+    <script src="../Versión 4/JavaS/Slider.js"></script>
+</body>
+<!-- body end-->
+</html>

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:white;
+    font-family: sans-serif;
+}
+
+.container-cronometer .row .col h1{
+    text-align: center;
+    margin: 20px 10px;
+    padding: 20px;
+    font-size: 40px;
+    color: #ffffff;
+    background-color: #FFD24A;
+    border-radius: 10px;
+}
+
+.container-cronometer .row .col p{
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-cronometer .row .col .btn-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.container-cronometer .row .col .btn-group button{
+    border: none;
+    color: white;
+    background-color: #FFD24A ;
+    font-size: 20px;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+.container-cronometer .row .col .btn-group button:hover{
+    border:none;
+    color: #FFCA2C;
+    background-color: black ;
+}
+
+
+h5{
+    font-size: 20px;
+    text-align: center;
+    margin: 30px 10px;
+}
+
+#almacenarTiempos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+/*=========================================================*/
+/* Responsive del Cronometro*/
+
+@media screen and (max-width:360px){
+    .container-cronometer .row .col .btn-group{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    .container-cronometer .row .col .btn-group button{
+        border: none;
+        color: white;
+        background-color: #FFD24A ;
+        font-size: 20px;
+        margin: 5x;
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .container-cronometer .row .col .btn-group button:hover{
+        border:none;
+        color: #FFCA2C;
+        background-color: black ;
+    }
+}
+
+

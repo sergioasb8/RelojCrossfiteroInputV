@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+}
+
+.banner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: yellow;
+    height: 510px;
+}
+.banner:hover{
+    background-color: rgb(0, 0, 0);
+}
+
+.banner-item{
+    flex: 1;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: flex-grow .2s;
+    position: relative;
+}
+.banner-item:hover{
+     flex-grow: 10;
+
+     
+}
+.banner-item:hover .banner-title{
+     transform: rotate(0);
+}
+
+p{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.banner-item .banner-info{
+    opacity: 0;    
+    transform: translate(0);
+}
+
+.banner-item ,.banner-info:hover{
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: translate(1);
+    transition: transform .2s;
+}
+
+.banner-item:nth-child(1){
+    background-color:  #FFD24A;
+    border: #ffffff solid; 
+}
+.banner-item:nth-child(1):hover{
+    background-color: #FFCA2C;
+    border: #ffffff solid; 
+}
+
+.banner-item:nth-child(2){
+    background-color: #FFCA2C;
+    border: #ffffff solid; 
+}
+.banner-item:nth-child(2):hover{
+    background-color:  #FFD24A;
+    border: #ffffff solid;
+}
+
+.banner-item:nth-child(3){
+    background-color:  #FFD24A;
+    border: #ffffff solid; 
+}
+.banner-item:nth-child(3):hover{
+    background-color: #FFCA2C;
+    border: #ffffff solid; 
+}
+
+.banner-item:nth-child(4){
+    background-color: #FFCA2C;
+    border: #ffffff solid; 
+}
+.banner-item:nth-child(4):hover{
+    background-color:  #FFD24A;
+    border: #ffffff solid;
+}
+.banner-item:nth-child(5){
+    background-color:  #FFD24A;
+    border: #ffffff solid; 
+}
+.banner-item:nth-child(5):hover{
+    background-color: #FFCA2C;
+    border: #ffffff solid; 
+}
+ .banner-title{
+    margin: 10px;
+    transform: rotate(-90deg);
+    transition: transform .2s;
+    position: absolute;
+    top: 20%;
+ }
+ @media screen and (max-width:960px){
+    .banner{
+        background-color: yellow;
+        height: 200px;
+        
+    }
+    .banner-title{
+        transform: none;
+     }
+    .banner-item:hover .banner-title{
+        transform: none;
+   }
+  
+
+ }
+ @media screen and (max-width:400px){
+    .banner{
+        background-color: yellow;
+        height: 200px;
+        
+    }
+    .banner-title{
+        transform: none;
+     }
+    .banner-item:hover .banner-title{
+        transform: none;
+   }
+  
+
+ }
+
+ 

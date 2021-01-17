@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head begin-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabata</title>
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"-->
+        <link rel="stylesheet" href="../CSS/Stylenavbar.css">
+        <link rel="stylesheet" href="../CSS/StyleTabata.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<!-- head end-->
+
+<!-- body begin-->
+<body>
+    <!--barra de navegación-->
+    <header>
+        <div id="logo">
+            <img src="../imagenes/relojcrosfitero (1).png" alt="" width="240px">
+        </div>
+            <nav id="menu">
+                <ul>
+                    <li><button type="button" class="btn btn-danger mr-5 ml-5" id="BackToMenu">Menú</button></li>
+                    <li><button type="button" class="btn btn-danger mr-5 ml-5" id="GoToCronometer">Cronometer</button></li>
+                    <li><button type="button" class="btn btn-danger mr-5 ml-5" id="GoToForTime">For Time</button></li>
+                    <li><button type="button" class="btn btn-danger mr-5 ml-5" id="GoToEmom">Emom</button></li>
+                    <li><button type="button" class="btn btn-danger mr-5 ml-5" id="GoToAmrap">Amrap</button></li>
+                </ul>
+    
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </header>
+        <!--barra de navegación-->
+    <!-- Tabata -->
+    <div class="container-Tabata">
+        <div class="row">
+            <div class="col">
+                <div>
+                    <h1 class="d-flex justify-content-center">Tabata</h1>
+                    <div class="btn-group mb-2 d-flex justify-content-center" role="group">
+                        <p class="d-flex font-weight-bold mr-5 ml-5">ROUNDS</p>
+                        <p id="TabataRounds" class="d-flex font-weight-bold">0</p>
+                    </div>
+                    <div class="btn-group mb-2 d-flex justify-content-center" role="group">
+                        <p class="d-flex font-weight-bold mr-5 ml-5">WORK</p>
+                        <p id="TabataWork" class="d-flex font-weight-bold">00</p>
+                        <p class="d-flex font-weight-bold mr-5 ml-5">REST</p>
+                        <p id="TabataRest" class="d-flex font-weight-bold">00</p>
+                    </div>
+                </div>
+                <div class="btn-group mb-2 d-flex justify-content-center" role="group">
+                    <p class="d-flex justify-content-center font-weight-bold mr-5 ml-5">FOR</p>
+                    <input type="text" id="InputGetRounds" placeholder="00">
+                    <p class="d-flex justify-content-center font-weight-bold mr-5">ROUND</p>
+                </div>
+                <div class="btn-group mb-2 d-flex justify-content-center" role="group">
+                    <p class="d-flex justify-content-center font-weight-bold mr-5 ml-5">WORK</p>
+                    <input type="text" id="InputGetWork" placeholder="00">
+                    <p class="d-flex justify-content-center font-weight-bold mr-5">SECONDS</p>
+                </div>
+                <div class="btn-group mb-2 d-flex justify-content-center" role="group">
+                    <p class="d-flex justify-content-center font-weight-bold mr-5 ml-5">REST</p>
+                    <input type="text" id="InputGetRest" placeholder="00">
+                    <p class="d-flex justify-content-center font-weight-bold mr-5">SECONDS</p>
+                </div>
+                <div class="btn-group mb-2 d-flex justify-content-center" role="group">
+                    <button onclick="StartTabataFunction();" type="button" class="btn btn-primary mr-5 ml-5" id="StartTabata">Start / Continue</button>
+                    <button onclick="StopTabataFunction();" type="button" class="btn btn-primary mr-5" id="StopTabata">Stop</button>
+                    <button onclick="ResetTabataFunction();" type="button" class="btn btn-primary mr-5" id="ResetTabata">Reset</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- Tabata -->
+
+    <!-- Links to call bootstrap jquery and cluodflare-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+        <script src="../JavaS/Tabata.js"></script>
+        <script src="../JavaS/navbar.js"></script>
+</body>
+<!-- body end-->
+</html>
